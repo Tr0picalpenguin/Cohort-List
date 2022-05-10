@@ -13,6 +13,7 @@
 		D2F7B265279650B900A84719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F7B264279650B900A84719 /* Assets.xcassets */; };
 		D2F7B268279650B900A84719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F7B266279650B900A84719 /* LaunchScreen.storyboard */; };
 		ED9483DE282AFCCB0026E204 /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483DD282AFCCB0026E204 /* StudentListTableViewController.swift */; };
+		ED9483E1282B05210026E204 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483E0282B05210026E204 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D2F7B267279650B900A84719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F7B269279650B900A84719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9483DD282AFCCB0026E204 /* StudentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
+		ED9483E0282B05210026E204 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D2F7B25A279650B800A84719 /* CohortList */ = {
 			isa = PBXGroup;
 			children = (
+				ED9483DF282B04F90026E204 /* Model */,
 				ED9483DB282AFC970026E204 /* Controller */,
 				D2F7B26F279650CC00A84719 /* Resources */,
 				D2F7B261279650B800A84719 /* Main.storyboard */,
@@ -89,6 +92,14 @@
 				ED9483DD282AFCCB0026E204 /* StudentListTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED9483DF282B04F90026E204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED9483E0282B05210026E204 /* Student.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				ED9483DE282AFCCB0026E204 /* StudentListTableViewController.swift in Sources */,
 				D2F7B25C279650B800A84719 /* AppDelegate.swift in Sources */,
 				D2F7B25E279650B800A84719 /* SceneDelegate.swift in Sources */,
+				ED9483E1282B05210026E204 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
