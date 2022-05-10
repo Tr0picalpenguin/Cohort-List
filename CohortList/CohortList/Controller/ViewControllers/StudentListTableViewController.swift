@@ -9,38 +9,53 @@ import UIKit
 
 class StudentListTableViewController: UITableViewController {
 
+    @IBOutlet weak var studentNameTextField: UITextField!
+    @IBOutlet weak var cohortIDTextField: UITextField!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+   
+    @IBAction func addButtonPressed(_ sender: Any) {
+        createStudent()
+    }
+    
+    
+    
+    
+    
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return StudentController.sharedInstance.students.count
     }
 
-    /*
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell", for: indexPath)
 
-        // Configure the cell...
-
+        let students = StudentController.sharedInstance.students[indexPath.row]
+        cell.textLabel?.text = students.name
+        cell.detailTextLabel?.text = "\(students.cohortID)"
+        
         return cell
     }
-    */
+    
+    func createStudent() {
+        guard let newName = studentNameTextField.text else {return}
+        guard let newID = cohortIDTextField.text else {return}
+        StudentController.sharedInstance.createStudent(name: newName, cohortID: Int(newID) ?? 0)
+        tableView.reloadData()
+    }
 
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
