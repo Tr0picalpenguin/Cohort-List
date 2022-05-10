@@ -14,6 +14,7 @@
 		D2F7B268279650B900A84719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F7B266279650B900A84719 /* LaunchScreen.storyboard */; };
 		ED9483DE282AFCCB0026E204 /* StudentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483DD282AFCCB0026E204 /* StudentListTableViewController.swift */; };
 		ED9483E1282B05210026E204 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483E0282B05210026E204 /* Student.swift */; };
+		ED9483E3282B06450026E204 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483E2282B06450026E204 /* StudentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D2F7B269279650B900A84719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9483DD282AFCCB0026E204 /* StudentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewController.swift; sourceTree = "<group>"; };
 		ED9483E0282B05210026E204 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		ED9483E2282B06450026E204 /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				ED9483DC282AFCAA0026E204 /* ViewControllers */,
+				ED9483E2282B06450026E204 /* StudentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9483E3282B06450026E204 /* StudentController.swift in Sources */,
 				ED9483DE282AFCCB0026E204 /* StudentListTableViewController.swift in Sources */,
 				D2F7B25C279650B800A84719 /* AppDelegate.swift in Sources */,
 				D2F7B25E279650B800A84719 /* SceneDelegate.swift in Sources */,
