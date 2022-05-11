@@ -21,18 +21,6 @@
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wKz-cs-75B">
                                     <rect key="frame" x="4" y="4" width="406" height="91"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Student Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeZ-Fo-SfR">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cohort ID..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sh8-ls-whI">
-                                            <rect key="frame" x="0.0" y="47.5" width="406" height="43.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                    </subviews>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemMintColor"/>
@@ -75,16 +63,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ZE7-yX-3kT">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="g67-tO-TeY">
-                            <connections>
-                                <action selector="addButtonPressed:" destination="T4O-jS-44q" id="4Ag-8q-FvU"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="g67-tO-TeY"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="cohortIDTextField" destination="sh8-ls-whI" id="RVx-eV-Lvf"/>
-                        <outlet property="studentNameTextField" destination="aeZ-Fo-SfR" id="IIk-QT-2k8"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUR-3b-5ST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

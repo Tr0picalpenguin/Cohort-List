@@ -15,9 +15,20 @@ class StudentController {
     var students: [Student] = []
     
     // MARK: - The following code will be CRUD functions.
-    func createStudent(name: String, cohortID: Int) {
-        let newStudent = Student(name: name, cohortID: cohortID)
+    func createStudent(name: String, cohortID: Int, studentDescription: String) {
+        let newStudent = Student(name: name, cohortID: cohortID, studentDescription: studentDescription)
         students.append(newStudent)
+    }
+    
+    func updateStudent(newName: String, newCohort: Int, newStudentDescription: String, studentToUpdate: Student) {
+        studentToUpdate.name = newName
+        studentToUpdate.cohortID = newCohort
+        studentToUpdate.studentDescription = newStudentDescription
+    }
+    
+    func deleteStudent(studentToDelete: Student) {
+        guard let indexOfStudenToDelete = students.firstIndex(of: studentToDelete) else {return}
+        students.remove(at: indexOfStudenToDelete)
     }
     
     

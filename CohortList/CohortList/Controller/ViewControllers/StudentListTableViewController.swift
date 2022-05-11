@@ -9,8 +9,7 @@ import UIKit
 
 class StudentListTableViewController: UITableViewController {
 
-    @IBOutlet weak var studentNameTextField: UITextField!
-    @IBOutlet weak var cohortIDTextField: UITextField!
+   
     
     
     
@@ -20,9 +19,7 @@ class StudentListTableViewController: UITableViewController {
 
     }
    
-    @IBAction func addButtonPressed(_ sender: Any) {
-        createStudent()
-    }
+   
     
     
     
@@ -48,13 +45,7 @@ class StudentListTableViewController: UITableViewController {
         return cell
     }
     
-    func createStudent() {
-        guard let newName = studentNameTextField.text else {return}
-        guard let newID = cohortIDTextField.text else {return}
-        StudentController.sharedInstance.createStudent(name: newName, cohortID: Int(newID) ?? 0)
-        tableView.reloadData()
-    }
-
+    
     
     /*
     // Override to support conditional editing of the table view.

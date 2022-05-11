@@ -83,8 +83,8 @@
 		ED9483DB282AFC970026E204 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ED9483DC282AFCAA0026E204 /* ViewControllers */,
 				ED9483E2282B06450026E204 /* StudentController.swift */,
+				ED9483DC282AFCAA0026E204 /* ViewControllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
