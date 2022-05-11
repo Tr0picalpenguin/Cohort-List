@@ -89,8 +89,7 @@ class StudentListTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailVC" {
             if let index = tableView.indexPathForSelectedRow {
-                if let destination = segue.destination as?
-                    StudentDetailViewController {
+                if let destination = segue.destination as? StudentDetailViewController {
                     let student = StudentController.sharedInstance.students[index.row]
                     destination.student = student
                 }
