@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,6 +56,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qT3-JT-oqw" kind="show" identifier="toDetailVC" id="FZP-dK-De3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -63,12 +67,32 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ZE7-yX-3kT">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="g67-tO-TeY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="g67-tO-TeY">
+                            <connections>
+                                <segue destination="qT3-JT-oqw" kind="show" id="XZt-yy-6HQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUR-3b-5ST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2302.898550724638" y="126.5625"/>
+        </scene>
+        <!--Student Detail View Controller-->
+        <scene sceneID="9hk-JQ-c5h">
+            <objects>
+                <viewController id="qT3-JT-oqw" customClass="StudentDetailViewController" customModule="CohortList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jc3-w9-yxX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Abc-Fh-igz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nqn-dR-tQR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Me-yH-j29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3023" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wa6-QY-0eS">
@@ -89,6 +113,9 @@
             <point key="canvasLocation" x="1394.2028985507247" y="126.5625"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FZP-dK-De3"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
