@@ -8,7 +8,13 @@
 import UIKit
 
 class StudentDetailViewController: UITableViewController {
-
+    
+    @IBOutlet weak var cohortLabel: UILabel!
+    @IBOutlet weak var enterCohortTextField: UITextField!
+    @IBOutlet weak var descriptionOfStudentTextField: UITextField!
+    @IBOutlet weak var studentNametextField: UITextField!
+    
+    var studentReceiver: Student
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +24,18 @@ class StudentDetailViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    @IBAction func clearButtonPressed(_ sender: Any) {
+    }
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+    }
+    @IBAction func saveButtonPressed(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
